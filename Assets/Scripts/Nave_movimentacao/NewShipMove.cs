@@ -5,6 +5,7 @@ using UnityEngine;
 public class NewShipMove : MonoBehaviour
 {
     [SerializeField] private Sprite _idle, _thrust;
+    [SerializeField] private List<GameObject> _motorLights = new List<GameObject>();
 
     [SerializeField] private float _thrustPower = 2f;
     [SerializeField] private float _angleStep = 90f;
@@ -51,9 +52,17 @@ public class NewShipMove : MonoBehaviour
 
     public void UpdateSprite(){
         if(_movement.y > 0f){
-            _spriteRenderer.sprite = _thrust; 
+            _spriteRenderer.sprite = _thrust;
+            foreach (GameObject m in _motorLights)
+            {
+                m.SetActive(true);
+            }
         }else{
             _spriteRenderer.sprite = _idle;
+            foreach (GameObject m in _motorLights)
+            {
+                m.SetActive(false);
+            }
         }
     }
 
