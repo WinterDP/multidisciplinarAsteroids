@@ -57,12 +57,22 @@ public class NewShipMove : MonoBehaviour
             {
                 m.SetActive(true);
             }
+            if (!AudioManager.instance.IsPlaying("shipThrust"))
+            {
+                AudioManager.instance.PlaySound("shipThrust");
+            }
+            
         }else{
             _spriteRenderer.sprite = _idle;
             foreach (GameObject m in _motorLights)
             {
                 m.SetActive(false);
             }
+            if (AudioManager.instance.IsPlaying("shipThrust"))
+            {
+                AudioManager.instance.StopSound("shipThrust");
+            }
+            
         }
     }
 

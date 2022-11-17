@@ -34,6 +34,7 @@ public class NewShipAttack : MonoBehaviour
     public void Shoot(){
         _canShoot = false;
         GameObject newProjectile = Instantiate(_projectile,_firePoint.position,Quaternion.Euler(transform.rotation.eulerAngles));
+        AudioManager.instance.PlaySound("shipShoot");
         newProjectile.GetComponent<NewProjectile>().setDirection(_firePoint.up);
     }
 }
