@@ -23,7 +23,7 @@ public class NewShipMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartBackgroundSound();
     }
 
     // Update is called once per frame
@@ -89,5 +89,11 @@ public class NewShipMove : MonoBehaviour
         transform.rotation = Quaternion.Euler(angleRotation);
     }
 
+    public void StartBackgroundSound(){
+        if (!AudioManager.instance.IsPlaying("backgroundSound"))
+            {
+                AudioManager.instance.PlaySound("backgroundSound");
+            }
+    }
 
 }

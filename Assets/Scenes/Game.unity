@@ -3176,7 +3176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.data[2].clip
@@ -3191,12 +3191,28 @@ PrefabInstance:
       value: shipThrust
       objectReference: {fileID: 0}
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 483d1207857e09e429afbb5fa0c5ae6d, type: 3}
+    - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
+      propertyPath: sounds.Array.data[3].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: backgroundSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.data[1].pitch
-      value: 0.8
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.data[2].pitch
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.data[1].volume
@@ -3205,6 +3221,10 @@ PrefabInstance:
     - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: sounds.Array.data[2].volume
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959343933594496130, guid: 74295b8def44d634889432d4de9cff99, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4959343933594496131, guid: 74295b8def44d634889432d4de9cff99, type: 3}
       propertyPath: m_RootOrder
